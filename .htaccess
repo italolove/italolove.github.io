@@ -1,0 +1,5 @@
+#Force www:
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^italo.work [NC]
+
+RewriteRule ^(.*)$ https://www.italo.work/$1 [L,R=301,NC]
